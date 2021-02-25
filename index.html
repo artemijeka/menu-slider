@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню - слайдер | Menu - slider</title>
+  <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="menu-slider">
+      <button class="menu-slider__toggle"><i class="menu-slider__toggle-decor"></i></button>
+      <ul class="menu-slider__list">
+        <li class="menu-slider__item"><a href="#home" class="menu-slider__link">Главная</a></li>
+        <li class="menu-slider__item"><a href="#about" class="menu-slider__link">О нас</a></li>
+        <li class="menu-slider__item"><a href="#services" class="menu-slider__link">Услуги</a></li>
+        <li class="menu-slider__item"><a href="#portfolio" class="menu-slider__link">Портфолио</a></li>
+        <li class="menu-slider__item"><a href="#team" class="menu-slider__link">Команда</a></li>
+        <li class="menu-slider__item"><a href="#contacts" class="menu-slider__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="section" id="home">
+      <h2 class="section__title">Главная</h2>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="section__title">О нас</h2>
+    </section>
+
+    <section class="section" id="services">
+      <h2 class="section__title">Услуги</h2>
+    </section>
+
+    <section class="section" id="portfolio">
+      <h2 class="section__title">Портфолио</h2>
+    </section>
+
+    <section class="section" id="team">
+      <h2 class="section__title">Команда</h2>
+    </section>
+
+    <section class="section" id="contacts">
+      <h2 class="section__title">Контакты</h2>
+    </section>
+
+  </main>
+
+  <script>
+    var menuSlider = document.querySelector('.menu-slider');
+    document.querySelector('.menu-slider__toggle').onclick = function () {
+      this.classList.toggle('active');
+      menuSlider.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
